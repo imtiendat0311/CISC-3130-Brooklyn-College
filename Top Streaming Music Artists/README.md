@@ -22,8 +22,8 @@ Position | Track Name|Artist|Streams|URL
 * **Who appears on the top streamed list?**
 First, the exec wants to know which artists appears on the list and how many times they appear. Prepare an output file with contents of your nested array so that the record label executive can see this report. Note on data links: These links are provided merely for quick access to data files. You may choose to download any date or country from Spotify Charts of interest. Best practice with any type of data work is to provide a note on whichever data you select and rationale for doing so.
 
- * Link to Data Extract 1: Week ending Jan 23, 2020 (Global)
- * Link to Data Extract 2: Week ending Jan 23, 2020 (US)
+    * Link to Data Extract 1: Week ending Jan 23, 2020 (Global)
+    * Link to Data Extract 2: Week ending Jan 23, 2020 (US)
 <br>Not knowing data structures yet, it seems the way to proceed quickly at building is with Java arrays. Read in the text file and then save the CSV file format into a nested Java array like myList below. If an artist appears multiple times, then that artist probably should only appear once in your nested array.
 
 ```java
