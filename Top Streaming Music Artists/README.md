@@ -20,6 +20,7 @@ Position | Track Name|Artist|Streams|URL
 ...|...|...|...|...
 
 * **Who appears on the top streamed list?**
+
 First, the exec wants to know which artists appears on the list and how many times they appear. Prepare an output file with contents of your nested array so that the record label executive can see this report. Note on data links: These links are provided merely for quick access to data files. You may choose to download any date or country from Spotify Charts of interest. Best practice with any type of data work is to provide a note on whichever data you select and rationale for doing so.
 
     * Link to Data Extract 1: Week ending Jan 23, 2020 (Global)
@@ -41,6 +42,7 @@ System.out.println("arr[0][0] = " + arr[0][0]);
 Will you limit to just the artist name? Perhaps you should discuss your decision with your class colleagues.
 
 * ***Who are the music artists (in alphabetical order)?***
+
 It just so happens that this imaginary VIP client has a thing for alphabetized lists and wants to see the artist names in alphabetical order. Since you learned about linked lists in class, you should know how to create one.
 
 You can probably take the array from part 1, which is hopefully a truncated version of the raw data, and insert artist names into a sorted linked list.
