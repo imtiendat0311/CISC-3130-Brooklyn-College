@@ -25,6 +25,7 @@ First, the exec wants to know which artists appears on the list and how many tim
 <br>Link to Data Extract 1: Week ending Jan 23, 2020 (Global)
 <br>Link to Data Extract 2: Week ending Jan 23, 2020 (US)
 <br>Not knowing data structures yet, it seems the way to proceed quickly at building is with Java arrays. Read in the text file and then save the CSV file format into a nested Java array like myList below. If an artist appears multiple times, then that artist probably should only appear once in your nested array.
+
 ```java
 /* Java nested array syntax */
 
@@ -33,7 +34,9 @@ int rows = 10; // arbitrary number represents rows to create;
 String[][] myList = new String[rows][cols];
 
 int[][] arr = { { 1, 2 }, { 3, 4 } };
-System.out.println("arr[0][0] = " + arr[0][0]);```
+System.out.println("arr[0][0] = " + arr[0][0]);
+
+```
 Will you limit to just the artist name? Perhaps you should discuss your decision with your class colleagues.
 
 * ***Who are the music artists (in alphabetical order)?***
@@ -42,6 +45,7 @@ It just so happens that this imaginary VIP client has a thing for alphabetized l
 You can probably take the array from part 1, which is hopefully a truncated version of the raw data, and insert artist names into a sorted linked list.
 
 You may use the example classes below to start with to design a sorted list of TopStreamingArtists. You may also create your own classes. The classes work like templates because they offer a blueprint, where you can reuse the object oriented structure by creating objects from those classes.
+
 ```java
 /* A node represents an artist */
  class Artist {
@@ -59,12 +63,15 @@ You may use the example classes below to start with to design a sorted list of T
     public boolean isEmpty(){
      return (first == null);
     }
- } ```
-Using the linked list structure you've designed and created, you can resume with the data processing in order to provide another report to the insert an artist name to the TopStreamingArtists linked list.
+ } 
+ ```
+<br> Using the linked list structure you've designed and created, you can resume with the data processing in order to provide another report to the insert an artist name to the TopStreamingArtists linked list.
+
 ```java
 public static void main(String [ ] args) {
     TopStreamingArtists artistNames = new TopStreamingArtists();
     artistNames.insert("Stage Name");
     artistNames.displayList();
-}```
-Make sure to print out the report for the exec showing the data in ascending order by Artist name.
+}
+```
+<br>Make sure to print out the report for the exec showing the data in ascending order by Artist name.
